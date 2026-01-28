@@ -1,10 +1,12 @@
 package scoreboard.Model;
 
+import Util.IdGenerator;
+
 public record Team(
         String id,
-        String countryName,
-        Integer totalPoints,
-        Integer goalsScored,
-        Integer goalsAgainst
+        String countryName
 ) {
+    public Team(String countryName) {
+        this(IdGenerator.generate("team"), countryName);
+    }
 }
