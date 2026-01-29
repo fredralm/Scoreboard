@@ -10,13 +10,14 @@ import scoreboard.Requests.GetGameRequest;
 import scoreboard.Requests.GetTeamRequest;
 import scoreboard.Requests.UpdateScoreRequest;
 import scoreboard.Scoreboard;
+import scoreboard.ScoreboardService;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
 public class ScoreboardTest {
-    Scoreboard scoreboard = null;
+    Scoreboard scoreboard = new ScoreboardService();
 
     List<String> seedTeams = List.of("Mexico", "Canada", "Spain", "Brazil", "Germany", "France",
             "Uruguay", "Italy", "Argentina", "Australia"
