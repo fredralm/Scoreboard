@@ -40,10 +40,11 @@ public interface Scoreboard {
     /**
      * Create a new Game with score 0-0 and add it to scoreboard storage
      *
-     * @param homeTeamId ID of home team
-     * @param awayTeamId ID of away team
+     * @param homeTeamId String ID of home team
+     * @param awayTeamId String ID of away team
+     * @return String generated gameId
      */
-    void startGame(String homeTeamId, String awayTeamId);
+    String startGame(String homeTeamId, String awayTeamId);
 
     /**
      * Remove game from currently active games
